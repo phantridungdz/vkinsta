@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "729302811381",
+    "project_id": "v-kinsta",
+    "storage_bucket": "v-kinsta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729302811381:android:c68617305066884ce8bbbc",
+        "android_client_info": {
+          "package_name": "com.chasetech.vkinsta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729302811381-takhbqnfj8k3b2o70e47jjk510t7pqg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVgRFkxYP53NxOy2_0sZgRbb7BMevzdoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729302811381-takhbqnfj8k3b2o70e47jjk510t7pqg4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "729302811381-tumm40q5jjiuo61bkjhqsda8hmb1cnpm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.phantchase.v-kinsta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729302811381:android:84c647c198207014e8bbbc",
+        "android_client_info": {
+          "package_name": "com.hannahbode.a99vin2406"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729302811381-sakiat2hsn5s6u452sqf6ifg9cvptufd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hannahbode.a99vin2406",
+            "certificate_hash": "e18ae8bee204193cf9f0d71c4e933e7f1a810ae9"
+          }
+        },
+        {
+          "client_id": "729302811381-takhbqnfj8k3b2o70e47jjk510t7pqg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVgRFkxYP53NxOy2_0sZgRbb7BMevzdoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729302811381-takhbqnfj8k3b2o70e47jjk510t7pqg4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "729302811381-tumm40q5jjiuo61bkjhqsda8hmb1cnpm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.phantchase.v-kinsta"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

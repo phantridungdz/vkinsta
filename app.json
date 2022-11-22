@@ -1,12 +1,17 @@
 {
   "expo": {
-    "name": "blank",
-    "slug": "blank",
+    "name": "Vkinsta",
+    "slug": "Vkinsta",
     "version": "1.0.0",
     "platforms": [
       "ios",
-      "android",
-      "web"
-    ]
+      "android"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.chasetech.vkinstar"
+    },
+    "android": {
+      "package": "com.chasetech.vkinsta"
+    }
   }
 }

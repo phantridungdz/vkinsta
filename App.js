@@ -1,15 +1,18 @@
-import { View, Text } from "react-native";
+import * as React from "react";
+import { AuthProvider } from "./context/AuthContext";
+import { PostProvider } from "./context/PostContext"
+import Navigation from "./Navigation";
 
-export default function App() {
+const App = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-    </View>
-  );
+    <AuthProvider>
+      
+        <PostProvider >
+          <Navigation />
+        </PostProvider>
+      
+    </AuthProvider>
+  )
 }
+
+export default App;
