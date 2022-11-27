@@ -48,6 +48,10 @@
     </dict>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>Vkinsta required photo library access</string>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Vkinsta required network access</string>
+    <key>NSBonjourServices</key>
+    <string>Vkinsta required NSBonjourServices access</string>
     <key>NSCameraUsageDescription</key>
     <string>Vkinsta required camera access to take photo</string>
     <key>NSMicrophoneUsageDescription</key>

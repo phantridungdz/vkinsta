@@ -16,31 +16,37 @@ import AudioCallScreen from './screens/AudioCallScreen'
 
 const Stack = createNativeStackNavigator()
 
+export const navigationRef = React.createRef();
+
+export function navigate(name, params) {
+  navigationRef.current?.navigate(name, params);
+}
+
 const Navigation = () => {
   const {userInfo} = useContext(AuthContext)
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        {userInfo.access_token ? (
-          <>
-            <Stack.Screen name="HomeScreen" component={HomeScreen} options={{headerShown: false}}/>
-            <Stack.Screen name="CommentScreen" component={CommentScreen} options={{headerShown: false}}/>
-            <Stack.Screen name="ChatScreen" component={ChatScreen} options={{headerShown: false}}/>
-            <Stack.Screen name="NewPostScreen" component={NewPostScreen} options={{headerShown: false}}/>
-            <Stack.Screen name="ProfileScreen" component={ProfileScreen} options={{headerShown: false}}/>
-            <Stack.Screen name="MessesageScreen" component={MessesageScreen} options={{headerShown: false}}/>
-            <Stack.Screen name="AudioCallScreen" component={AudioCallScreen} options={{headerShown: false}}/>
-          </>
-        ):(
-          <>
-            <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown: false}} />
-            <Stack.Screen name="RegisterScreen" component={RegisterScreen} options={{headerShown: false}}/>
-          </>
-        )}
-        
-        
-      </Stack.Navigator>
-    </NavigationContainer>
+      <NavigationContainer ref={navigationRef}>
+        <Stack.Navigator>
+          {userInfo.access_token ? (
+            <>
+              <Stack.Screen name="HomeScreen" component={HomeScreen} options={{headerShown: false}}/>
+              <Stack.Screen name="CommentScreen" component={CommentScreen} options={{headerShown: false}}/>
+              <Stack.Screen name="ChatScreen" component={ChatScreen} options={{headerShown: false}}/>
+              <Stack.Screen name="NewPostScreen" component={NewPostScreen} options={{headerShown: false}}/>
+              <Stack.Screen name="ProfileScreen" component={ProfileScreen} options={{headerShown: false}}/>
+              <Stack.Screen name="MessesageScreen" component={MessesageScreen} options={{headerShown: false}}/>
+              <Stack.Screen name="AudioCallScreen" component={AudioCallScreen} options={{headerShown: false}}/>
+            </>
+          ):(
+            <>
+              <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown: false}} />
+              <Stack.Screen name="RegisterScreen" component={RegisterScreen} options={{headerShown: false}}/>
+            </>
+          )}
+          
+          
+        </Stack.Navigator>
+      </NavigationContainer>
   )
 }
 

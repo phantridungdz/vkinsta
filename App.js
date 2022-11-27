@@ -5,13 +5,13 @@ import Navigation from "./Navigation";
 
 const App = () => {
   return (
-    <AuthProvider>
-      
-        <PostProvider >
-          <Navigation />
-        </PostProvider>
-      
-    </AuthProvider>
+
+      <AuthProvider>
+          <PostProvider >
+            <Navigation />
+          </PostProvider>
+      </AuthProvider>
+
   )
 }
 
